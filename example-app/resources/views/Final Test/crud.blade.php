@@ -17,7 +17,7 @@
     <div class="container-fuild">
         <div class="container-fuild row">
             <div class="col-sm-8"><h2>Customer <b>Details</b></h2></div>
-            <div class="col-md-4 add-button"><a href=""><button type="button" class="btn btn-success">Add</button></a></div>
+            <div class="col-md-4 add-button"><a href="/students/create"><button type="button" class="btn btn-success">Add</button></a></div>
         </div>
         <table class="table">
             <thead class="thead-dark">
@@ -30,16 +30,21 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th class="fs-5"scope="row">1</th>
-                <td class="fs-5">65160319</td>
-                <td class="fs-5">Kitikawin Hompan</td>
-                <td class="fs-5">098-934-2109</td>
-                <td style="width: 150px">
-                    <button type="button" class="btn btn-primary">Edit</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </td>
-              </tr>
+                <?php
+                    foreach ($students as $index => $student) { ?>
+
+                        <tr>
+                            <th class="fs-5"scope="row">{{ $index + 1 }}</th>
+                            <td class="fs-5">{{ $student -> stu_student_id }}</td>
+                            <td class="fs-5">{{ $student -> stu_name }}</td>
+                            <td class="fs-5">{{ $student -> stu_phone }}</td>
+                            <td style="width: 150px">
+                                <button type="button" class="btn btn-primary">Edit</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+
+                <?php } ?>
           </table>
     </div>
 </body>

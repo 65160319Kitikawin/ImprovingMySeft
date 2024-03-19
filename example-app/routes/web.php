@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\formController;
+use App\Http\Controllers\crudController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +14,4 @@ use App\Http\Controller\formController;
 |
 */
 
-Route::get('/', function () {
-    return view('Final Test.crud');
-});
-
-Route::get('/add', function () {
-    return view('Final Test.add');
-});
+Route::resource('/students', crudController::class);

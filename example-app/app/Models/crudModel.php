@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Custormers extends Model
+class crudModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'custormers';
-    protected $primarykey = "cus_id";
+    protected $table = 'students';
+    protected $primarykey = "stu_id";
     public $incrementing = true;
     public $timestamps = false;
 }

@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\customersModel;
+use App\Models\crudModel;
 use Illuminate\Support\Facades\Redirect;
 
-class formController extends Controller
+class crudController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data['Customers'] = Custormes::all();
-        return view('Final Test.final', $data);
+        $data['students'] = crudModel::all();
+        return view('Final Test.crud', $data);
     }
 
     /**
@@ -22,7 +22,7 @@ class formController extends Controller
      */
     public function create()
     {
-        //
+        return view('Final Test.add');
     }
 
     /**
@@ -30,7 +30,20 @@ class formController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $stu_student_id = $request->input('studentId');
+        $stu_name = $request->input('Name');
+        $stu_phone = $request->input('Phone');
+
+        $crudModel = new crudModel();
+
+        $crudModel -> stu_student_id = $stu_student_id;
+        $crudModel -> stu_name = $stu_name;
+        $crudModel -> stu_phone = $stu_phone;
+
+        $crudModel -> save();
+
+        $data['students'] = crudModel::all();
+        return view('Final Test.crud', $data);
     }
 
     /**

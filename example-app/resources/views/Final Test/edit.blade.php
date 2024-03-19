@@ -13,13 +13,13 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
         </script>
-    <title>Add Student Form</title>
+    <title>Edit Student Form</title>
 </head>
 <body>
     <div class="col d-flex flex-column align-items-center">
         <form action="/students" method="POST" class="body d-flex flex-column justify-center align-items-center">
             @csrf
-            <label for="" class="mb-4 " style="font-size: 32px;">Create New Student Form</label>
+            <label for="" class="mb-4 " style="font-size: 32px;">Edit Student Form</label>
             <div class="input-group mb-4">
                 <label style="margin-left: 25px" for="">Student Id : </label>
                 <input style="margin-left: 40px" type="text" name="studentId"></div>
