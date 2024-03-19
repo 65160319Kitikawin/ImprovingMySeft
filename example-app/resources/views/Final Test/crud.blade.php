@@ -15,9 +15,9 @@
 </head>
 <body>
     <div class="container-fuild">
-        <div class="row">
+        <div class="container-fuild row">
             <div class="col-sm-8"><h2>Customer <b>Details</b></h2></div>
-            <div class="col-md-4"><a href=""><button type="button" class="btn btn-success">Add</button></a></div>
+            <div class="col-md-4 add-button"><a href=""><button type="button" class="btn btn-success">Add</button></a></div>
         </div>
         <table class="table">
             <thead class="thead-dark">
@@ -32,9 +32,9 @@
             <tbody>
               <tr>
                 <th class="fs-5"scope="row">1</th>
-                <td class="fs-5">Mark</td>
-                <td class="fs-5">Otto</td>
-                <td class="fs-5">@mdo</td>
+                <td class="fs-5">65160319</td>
+                <td class="fs-5">Kitikawin Hompan</td>
+                <td class="fs-5">098-934-2109</td>
                 <td style="width: 150px">
                     <button type="button" class="btn btn-primary">Edit</button>
                     <button type="button" class="btn btn-danger">Delete</button>
