@@ -16,7 +16,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Phone</th>
-                <th style="width: 50px" scope="col" class="add_button"><a href="" >+</a></th>
+                <th style="width: 0px" scope="col" class="add_button"><a href="" >+</a></th>
               </tr>
             </thead>
             <tbody>
