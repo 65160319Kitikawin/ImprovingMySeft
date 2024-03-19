@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset("css/myStyle.css")}}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
@@ -14,19 +13,28 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
         </script>
-    <title>Add Student Detail</title>
+    <title>Add Student Form</title>
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <label for="">Srudent Id</label>
-            <input type="text">
-            <br>
-            <label for="">Name</label>
-            <input type="text">
-            <br>
-            <label for="">Phone</label>
-            <input type="text">
+    <div class="col d-flex flex-column align-items-center">
+        <form action="" class="body d-flex flex-column justify-center align-items-center">
+            @csrf
+            <label for="" class="mb-4 " style="font-size: 32px;">Create New Student Form</label>
+            <div class="input-group mb-4">
+                <label style="margin-left: 25px" for="">Student Id : </label>
+                <input style="margin-left: 40px" type="text"></div>
+            <div class="input-group mb-4">
+                <label style="margin-left: 25px" for="">Name : </label>
+                <input style="margin-left: 71px" type="text">
+            </div>
+            <div class="input-group mb-4">
+                <label style="margin-left: 25px" for="">Phone : </label>
+                <input style="margin-left: 69px" type="text">
+            </div>
+            <div class="d-grid gap-5 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" style="font-weight:400; height: 45px;" type="submit">Submit</button>
+                <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit">Cancel</button>
+            </div>
         </form>
     </div>
 </body>
