@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Final Test.final');
 });
+
+Route::resource('Customers', FormController::class);

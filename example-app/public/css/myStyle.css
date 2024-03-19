@@ -6,3 +6,15 @@
     line-height:1em;
     padding-bottom: 0.5em;
 }
+
+.add_button a {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff; /* Bootstrap's default primary color */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .add_button a:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+  }
