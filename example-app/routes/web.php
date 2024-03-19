@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\formController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('Final Test.final');
 });
 
-Route::resource('Customers', FormController::class);
+Route::resource('customers', formController::class);
