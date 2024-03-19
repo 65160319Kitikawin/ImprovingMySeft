@@ -15,7 +15,9 @@ use App\Http\Controller\formController;
 */
 
 Route::get('/', function () {
-    return view('Final Test.final');
+    return view('Final Test.crud');
 });
 
-Route::resource('customers', formController::class);
+Route::get('/add', function () {
+    return view('Final Test.add');
+});
