@@ -1,20 +1,11 @@
-.table_header {
-    font-size:1.5em;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    line-height:1em;
+.table-header {
+    font-size:1em;
+    font-weight: 350;
+    line-height: 1em;
     padding-bottom: 0.5em;
 }
 
-.add_button a {
-    color: white;
-    text-decoration: none;
-    background-color: #007bff; /* Bootstrap's default primary color */
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  .add_button a:hover {
-    background-color: #0056b3; /* Darker shade of primary color on hover */
+.add-button button{
+    text-align: right;
+    float: right;
   }
