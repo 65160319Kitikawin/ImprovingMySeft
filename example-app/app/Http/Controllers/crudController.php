@@ -59,7 +59,14 @@ class crudController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $stu_data = crudModel::find($id);
+        $students = crudModel::all();
+
+        if($stu_data === null) {
+            return Redirect::to('/students');
+        }else {
+            return view("update",compact("$stu_data"));
+        }
     }
 
     /**
@@ -67,7 +74,19 @@ class crudController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $stu_student_id = $request->input('studentId');
+        $stu_name = $request->input('Name');
+        $stu_phone = $request->input('Phone');
+
+        $crudModelId = crudModel::find($id);
+
+        $crudModelId -> stu_student_id = $stu_student_id;
+        $crudModelId -> stu_student_id = $stu_student_id;
+        $crudModelId -> stu_student_id = $stu_student_id;
+
+        $crudModelId -> save();
+
+        return Redirect::to('/students');
     }
 
     /**

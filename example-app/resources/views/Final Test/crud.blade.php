@@ -39,7 +39,7 @@
                             <td class="fs-5">{{ $student -> stu_name }}</td>
                             <td class="fs-5">{{ $student -> stu_phone }}</td>
                             <td style="width: 150px">
-                                <button type="button" class="btn btn-primary">Edit</button>
+                                <a class="btn btn-primary" href="/students/{{ $students ->  stu_id}}/edit">Edit</a>
                                 <button type="button" class="btn btn-danger">Delete</button>
                             </td>
                         </tr>
