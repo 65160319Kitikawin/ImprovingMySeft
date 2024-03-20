@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="col d-flex flex-column align-items-center">
-        <form action="/students" method="POST" class="body d-flex flex-column justify-center align-items-center">
+        <form action="/students" method="PUT" class="body d-flex flex-column justify-center align-items-center">
             @csrf
             <label for="" class="mb-4 " style="font-size: 32px;">Edit Student Form</label>
             <div class="input-group mb-4">
@@ -32,7 +32,7 @@
                 <input style="margin-left: 69px" type="text" name="Phone">
             </div>
             <div class="d-grid gap-5 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary" style="font-weight:400; height: 45px;" type="submit">Submit</button>
+                <button class="btn btn-primary" style="font-weight:400; height: 45px;" type="submit">Save</button>
                 <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit">Cancel</button>
             </div>
         </form>
