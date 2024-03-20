@@ -36,8 +36,8 @@
                             <td class="fs-5">{{ $student -> stu_name }}</td>
                             <td class="fs-5">{{ $student -> stu_phone }}</td>
                             <td style="width: 150px">
-                                <a class="btn btn-primary" href="/students/{{ $student -> $stu_id }}/edit">Edit</a>
-                                <form action="/students/{{ $student -> $stu_id }}">
+                                <a class="btn btn-primary" href="/students/{{ $student -> stu_id }}/edit">Edit</a>
+                                <form action="/students/{{ $student -> stu_id }}">
                                     @csrf
                                     @method('DELETE')
                                     <button type="button" class="btn btn-danger">Delete</button>
