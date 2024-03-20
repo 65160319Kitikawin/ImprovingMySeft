@@ -33,7 +33,7 @@
             </div>
             <div class="d-grid gap-5 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary" style="font-weight:400; height: 45px;" type="submit">Submit</button>
-                <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit">Cancel</button>
+                <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit"><a style="color: white; text-decoration: none;" href="/students">Cancel</a></button>
             </div>
         </form>
     </div>

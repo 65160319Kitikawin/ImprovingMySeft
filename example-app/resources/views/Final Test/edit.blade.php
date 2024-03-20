@@ -19,22 +19,22 @@
     <div class="col d-flex flex-column align-items-center">
         <form action="/students/{{ $stu_data -> $stu_id }}" method="POST" class="body d-flex flex-column justify-center align-items-center">
             @csrf
-            @method("PUT")
+            @method('PUT')
             <label for="" class="mb-4 " style="font-size: 32px;">Edit Student Form</label>
             <div class="input-group mb-4">
                 <label style="margin-left: 25px" for="">Student Id : </label>
-                <input style="margin-left: 40px" type="text" name="studentId" value="{{ $stu_data -> $stu_student_id}}></div>
+                <input style="margin-left: 40px" type="text" name="studentId" value="{{ $stu_data -> $stu_student_id }}></div>
             <div class="input-group mb-4">
                 <label style="margin-left: 25px" for="">Name : </label>
-                <input style="margin-left: 71px" type="text" name="Name" value="{{ $stu_data -> $stu_name}}">
+                <input style="margin-left: 71px" type="text" name="Name" value="{{ $stu_data -> $stu_name }}">
             </div>
             <div class="input-group mb-4">
                 <label style="margin-left: 25px" for="">Phone : </label>
-                <input style="margin-left: 69px" type="text" name="Phone" value="{{ $stu_data -> $stu_phone}}>
+                <input style="margin-left: 69px" type="text" name="Phone" value="{{ $stu_data -> $stu_phone }}>
             </div>
             <div class="d-grid gap-5 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary" style="font-weight:400; height: 45px;" type="submit">Save</button>
-                <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit">Cancel</button>
+                <button class="btn btn-danger" style="font-weight:400; height: 45px;" type="submit"><a style="color: white; text-decoration: none;" href="/students">Cancel</a></button>
             </div>
         </form>
     </div>

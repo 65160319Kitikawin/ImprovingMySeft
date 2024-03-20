@@ -43,7 +43,7 @@ class crudController extends Controller
         $crudModel -> save();
 
         $data['students'] = crudModel::all();
-        return view('Final Test.crud', $data);
+        return Redirect::to('/students');
     }
 
     /**
@@ -51,7 +51,7 @@ class crudController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
@@ -94,6 +94,10 @@ class crudController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $crudModelId = crudModel::find($id);
+
+        $crudModelId -> delete();
+
+        return Redirect::to('/students');   
     }
 }
