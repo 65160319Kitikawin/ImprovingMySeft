@@ -51,7 +51,7 @@ class crudController extends Controller
      */
     public function show(string $id)
     {
-        
+
     }
 
     /**
@@ -65,7 +65,7 @@ class crudController extends Controller
         if($stu_data === null) {
             return Redirect::to('/students');
         }else {
-            return view("update",compact("$stu_data"));
+            return view("Final Test.edit",compact("stu_data"));
         }
     }
 
@@ -98,6 +98,6 @@ class crudController extends Controller
 
         $crudModelId -> delete();
 
-        return Redirect::to('/students');   
+        return Redirect::to('/students');
     }
 }

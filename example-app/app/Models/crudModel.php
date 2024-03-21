@@ -10,7 +10,7 @@ class crudModel extends Model
     use HasFactory;
 
     protected $table = 'students';
-    protected $primarykey = "stu_id";
+    protected $primaryKey = "stu_id";
     public $incrementing = true;
     public $timestamps = false;
 }

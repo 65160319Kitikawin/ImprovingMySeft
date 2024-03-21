@@ -15,7 +15,7 @@
     <div class="container-fuild">
         <div class="container-fuild row">
             <div class="col-sm-8"><h2>Customer <b>Details</b></h2></div>
-            <div class="col-md-4 add-button"><a href="/students/create"><button type="button" class="btn btn-success">Add</button></a></div>
+            <div class="col-md-4 add-button"><a href="/students/create"><button type="submit" class="btn btn-success">Add</button></a></div>
         </div>
         <table class="table">
             <thead class="thead-dark">
@@ -37,10 +37,10 @@
                             <td class="fs-5">{{ $student -> stu_phone }}</td>
                             <td style="width: 150px">
                                 <a class="btn btn-primary" href="/students/{{ $student -> stu_id }}/edit">Edit</a>
-                                <form action="/students/{{ $student -> stu_id }}">
+                                <form action="/students/{{ $student -> stu_id }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>
                             </td>
                         </tr>
