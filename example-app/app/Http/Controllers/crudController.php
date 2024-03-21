@@ -81,8 +81,8 @@ class crudController extends Controller
         $crudModelId = crudModel::find($id);
 
         $crudModelId -> stu_student_id = $stu_student_id;
-        $crudModelId -> stu_student_id = $stu_student_id;
-        $crudModelId -> stu_student_id = $stu_student_id;
+        $crudModelId -> stu_name = $stu_name;
+        $crudModelId -> stu_phone = $stu_phone;
 
         $crudModelId -> save();
 
