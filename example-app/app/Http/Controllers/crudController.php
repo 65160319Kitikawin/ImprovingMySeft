@@ -51,7 +51,9 @@ class crudController extends Controller
      */
     public function show(string $id)
     {
+        $stu_data = crudModel::find($id);
 
+        return view('Final Test.read',compact("stu_data"));
     }
 
     /**

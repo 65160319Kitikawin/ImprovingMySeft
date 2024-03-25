@@ -35,7 +35,8 @@
                             <td class="fs-5">{{ $student -> stu_student_id }}</td>
                             <td class="fs-5">{{ $student -> stu_name }}</td>
                             <td class="fs-5">{{ $student -> stu_phone }}</td>
-                            <td style="width: 150px">
+                            <td style="width: 250px">
+                                <a class="btn btn-info" style="color: aliceblue" href="/students/{{ $student -> stu_id }}">Read</a>
                                 <a class="btn btn-primary" href="/students/{{ $student -> stu_id }}/edit">Edit</a>
                                 <form class="d-inline" action="/students/{{ $student -> stu_id }}" method="POST">
                                     @csrf
