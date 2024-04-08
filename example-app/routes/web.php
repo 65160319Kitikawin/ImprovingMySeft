@@ -15,3 +15,7 @@ use App\Http\Controllers\crudController;
 */
 
 Route::resource('/students', crudController::class);
+
+Route::get('/', function () {
+    return view('collection');
+});
